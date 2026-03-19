@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Google Auto Next",
+  "version": "2.0",
+  "description": "Google auto next page with captcha handling",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.com/search*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
